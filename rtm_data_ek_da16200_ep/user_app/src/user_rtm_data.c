@@ -380,8 +380,6 @@ void user_rtm_data_init(void)
         configASSERT(0);
     }
 
-    return;
-
     if (pdPASS
             != OS_TASK_CREATE(USER_RTM_DATA_TASK_NAME, user_rtm_data_task, NULL, USER_RTM_DATA_TASK_STACK_SZ,
                               USER_RTM_DATA_TASK_PRI, xTask))
